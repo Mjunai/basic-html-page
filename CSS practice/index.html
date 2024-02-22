@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        /* .container {
+            width: 100%;
+            max-height: 90vh;
+        } */
+
+        .grid {
+            width: 100%;
+            height: vh;
+            margin-top: 2em;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 10px;
+            gap: 1em;
+        }
+/* 
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        } */
+
+
+        .card {
+            position: inherit;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            border-radius: .4rem;
+            box-shadow: inset .01em .01em 10px black;
+        }
+        .img{
+            width: 70%;
+            height: 70%;
+            position: inherit;
+            background-position: center;
+            background-size: cover;
+            align-self: center;
+        }
+        .img img{
+            width: 100%;
+            height: 100%;
+            padding: .4rem;
+            /* box-shadow: .2em .2em 10px black; */
+        }
+        .desc{
+            font-size: 16px;
+            color: rgb(160, 158, 158);
+            padding: .5rem;
+        }
+        .price{
+            font-size: 20px;
+            font-style: oblique;
+        }
+        .buy-btn{
+            text-decoration: none;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        @media only screen and (max-width: 1000px) {
+
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media only screen and (max-width: 670px) {
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="heading"><a href="index.html" id="title">E-Shopping</a></div>
+        <div class="list">
+            <li class="nav-links"><a href="signup.html" class="links">signUp</a></li>
+            <li class="nav-links"><a href="#" class="links">logIn</a></li>
+            <li class="nav-links"><a href="#" class="links">TBD</a></li>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <div class="img">
+                    <img src="https://source.unsplash.com/PDX_a_82obo"
+                        alt="" width="200" height="200">
+                </div>
+                <div class="info">
+                    <p class="desc">Wireless Headset</p>
+                    <span class="price">
+                        $199.99/-
+                    </span>
+                </div>
+                <a href="#" class="buy-btn">Buy now</a>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="https://source.unsplash.com/K62u25Jk6vo"
+                        alt="" width="200" height="200">
+                </div>
+                <div class="info">
+                    <p class="desc">Sun glasses</p>
+                    <span class="price">
+                        $299.99/-
+                    </span>
+                </div>
+                <a href="#" class="buy-btn">Buy now</a>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="https://source.unsplash.com/164_6wVEHfI"
+                        alt="" width="200" height="200">
+                </div>
+                <div class="info">
+                    <p class="desc">Sneakers</p>
+                    <span class="price">
+                        $99.99/-
+                    </span>
+                </div>
+                <a href="#" class="buy-btn">Buy now</a>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="https://source.unsplash.com/hbTKIbuMmBI"
+                        alt="" width="200" height="200">
+                </div>
+                <div class="info">
+                    <p class="desc">Smart watch</p>
+                    <span class="price">
+                        $299.99/-
+                    </span>
+                </div>
+                <a href="#" class="buy-btn">Buy now</a>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="https://source.unsplash.com/rsnzc-8dVs0"
+                        alt="" width="200" height="200">
+                </div>
+                <div class="info">
+                    <p class="desc">Exotic coffee</p>
+                    <span class="price">
+                        $99.49/-
+                    </span>
+                </div>
+                <a href="#" class="buy-btn">Buy now</a>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="https://source.unsplash.com/potCPE_Cw8A"
+                        alt="" width="200" height="200">
+                </div>
+                <div class="info">
+                    <p class="desc">perfume</p>
+                    <span class="price">
+                        $149.99/-
+                    </span>
+                </div>
+                <a href="#" class="buy-btn">Buy now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+
+</html>
